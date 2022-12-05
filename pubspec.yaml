@@ -1,0 +1,428 @@
+name: satuaja
+description: Aplikasi Swaloka.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+5
+
+environment:
+ sdk: ">=2.11.0 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  external_app_launcher: ^3.1.0
+  esc_pos_utils: ^1.1.0
+  fluttercontactpicker: ^4.7.0
+  #esc_pos_bluetooth: ^0.4.1
+  path_download: ^0.0.3
+  flutter_ringtone_player: ^3.2.0
+  bluetooth_print: ^3.0.1
+  cupertino_icons: any
+  image_picker: any
+  path_provider: any
+  hive: any
+  hive_flutter: any
+  awesome_dialog: ^3.0.2
+  awesome_notifications: ^0.7.4
+  carousel_slider: any
+  device_info: any
+  cached_network_image: any
+  connectivity: any
+  fluttertoast: any
+  double_back_to_close_app: any
+  image_crop: any
+  http: any
+  crypto: any
+  get: any  
+  dropdown_search: any
+  introduction_screen: any
+  badges: ^2.0.2
+  future_button: any
+  flutter_easyloading: any
+  flutter_speed_dial: any
+  geolocator: any
+  app_settings: any
+  easy_mask: any
+  clipboard: any
+  animate_do: any
+  string_extensions: any
+  pull_to_refresh: any
+  anim_search_bar: any
+  like_button: any
+  flutter_image: any
+  google_maps_flutter: any
+  firebase_database: any
+  flutter_polyline_points: any
+  flutter_staggered_grid_view: any
+  scroll_to_id: any
+  smooth_star_rating: any
+  webview_flutter: any
+  flutter_native_splash: any
+  convex_bottom_bar: any
+  vibration: any 
+  audioplayer: any
+  share: any
+  flutter_barcode_scanner: any
+  image: any
+  oktoast: any
+  auto_size_text: any
+  firebase_auth: any 
+  firebase_core: any
+  firebase_phone_auth_handler: any
+  url_launcher: any
+  url_launcher_platform_interface: any
+  day_night_time_picker: any
+  flutter_datetime_picker: any
+  marquee: any
+  photo_view: any
+  screenshot: any
+  permission_handler: any
+  get_storage: any
+  intl: any
+  syncfusion_flutter_pdfviewer: any
+  firebase_dynamic_links: any
+  date_ranger: any
+  easy_search_bar: any
+  signature: ^5.2.1
+  
+  dependencies:
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  change_app_package_name: ^1.1.0
+  flutter_test:
+    sdk: flutter
+  
+  flutter_launcher_icons: any
+ 
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "images/whitelabelUtama/iconlogo.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/ktp.png
+    - images/whitelabelRegister/daftar.png
+    - images/whitelabelRegister/daftarhp.png
+    - images/whitelabelRegister/daftarpassword.png
+    - images/daftarverifikasi.png
+    - images/no-avatar.png
+    - images/terima.png
+    - images/topup.png
+    - images/kirim.png
+    - images/whitelabelMainMenu/emoney.png
+    - images/whitelabelMainMenu/freshmart.png
+    - images/whitelabelMainMenu/game.png
+    - images/whitelabelMainMenu/makan.png
+    - images/whitelabelMainMenu/mall.png
+    - images/whitelabelMainMenu/mobil.png
+    - images/whitelabelMainMenu/pesawat.png
+    - images/whitelabelMainMenu/pickup.png
+    - images/whitelabelMainMenu/plnlogomenu.png
+    - images/whitelabelMainMenu/ppob.png
+    - images/whitelabelMainMenu/samotor.png
+    - images/whitelabelMainMenu/sapulsa.png
+    - images/whitelabelMainMenu/freshmartgrey.png
+    - images/whitelabelMainMenu/makangrey.png
+    - images/whitelabelMainMenu/mallgrey.png
+    - images/whitelabelMainMenu/ritzukagrey.png
+    - images/whitelabelMainMenu/samotorgrey.png
+    - images/whitelabelMainMenu/tokosekitargrey.png
+    - images/sellerbadge/tokosekitargrey.png
+    - images/whitelabelMainMenu/ritzuka.png
+    - images/whitelabelMainMenu/myschool.png
+    - images/whitelabelMainMenu/tokosekitar.png
+    - images/whitelabelMainMenu/pendonor.png
+    - images/whitelabelMainMenu/penyewaan.png
+    - images/whitelabelMainMenu/NoFitur.png
+    - images/whitelabelMainMenu/sipok.png
+    - images/whitelabelMainMenu/siwa.png
+    - images/whitelabelMainMenu/autodebet.png
+    - images/whitelabelMainMenu/tvprabayar.png
+    - images/whitelabelMainMenu/simpanpinjam.png
+    - images/whitelabelMainMenu/iconautodebet.png
+    - images/whitelabelMainMenu/iconpinjaman.png
+    - images/whitelabelMainMenu/iconsimpanan.png
+    - images/whitelabelMainMenu/Transportasi.png
+    - images/whitelabelMainMenu/MarketplaceGabungan.png
+ 
+    - images/whitelabelUtama/iconlogo.png
+    - images/whitelabelUtama/background.png
+    - images/whitelabelUtama/headerprofiles.png
+    - images/whitelabelUtama/iklansplash.png
+    - images/whitelabelUtama/logo.png
+    - images/whitelabelUtama/splashscreen.png
+
+    - images/simpanpinjam/cardblank.png
+    - images/sasukakop.png
+    - images/pasfoto.jpg
+
+    - images/noimage.jpg
+    - images/crown.png
+    - images/crownbw.png
+    - images/80persen.png
+
+    - images/covid1.png
+    - images/covid2.png
+    - images/covid3.png
+    - images/perlindungan.png
+    - images/tagihan.jpg
+    - images/pointgift.png
+    - images/agensi/Agen.png
+    - images/agensi/Performa.png
+    - images/agensi/TambahAgen.png
+    - images/agensi/AgenGrey.png
+    - images/agensi/PerformaGrey.png
+    - images/agensi/TambahAgenGrey.png
+
+    - images/pembayaran/StrukPembayaran.png
+    - images/pembayaran/EXPIRED.png
+    - images/pembayaran/PAID.png
+    - images/pembayaran/WAITING.png
+    - images/pembayaran/WaitingRed.png
+
+    - images/pay/paypaid.png
+    - images/pay/payproses.png
+    - images/pay/paywaiting.png
+    - images/pay/payexpire.png
+    - images/pay/payrefund.png
+
+    - images/FREEMEMBER.png
+    - images/SUBSCRIBER.png
+    - images/REGULER.png
+    - images/SILVER.png
+    - images/GOLD.png
+    - images/PLATINUM.png
+    - images/INVINITY.png
+    - images/lindungidata.png
+    - images/covid.png
+    - images/secure.png
+    - images/Bank.png
+    - images/Gembok.png
+    - images/Printer.png
+
+    
+
+    - images/selfie.png
+    - images/whitelabelRegister/a.png
+    - images/whitelabelRegister/b.png
+    - images/whitelabelRegister/c.png
+    - images/whitelabelRegister/d.png
+    - images/whitelabelRegister/e.png
+    - images/whitelabelRegister/f.png
+    - images/nocart.png
+    - images/nodata.png
+    - images/nodriver.png
+    - images/nofood.png
+    - images/nonotif.png
+    - images/noorder.png
+    - images/nopaket.png
+    - images/notrip.png
+    - images/nointernet.png
+    - images/nofreshmart.png
+
+    - images/1.png
+    - images/2.png
+    - images/3.png
+    - images/4.png
+    - images/5.png
+    - images/ritzuka.png
+    - images/no-avatar.jpg
+    - images/pulsareguler.png
+    - images/pulsadata.png
+    - images/pulsasms.png
+    - images/mal.png
+    - images/phil.png
+    - images/chin.png
+    - images/sing.png
+    - images/thai.png
+    - images/viet.png
+    - images/ONPROCESS.png
+    - images/REQUEST.png
+    - images/REJECT.png
+    - images/APPROVE.png
+    - images/CANCEL.png
+    - images/antarinmotor.png
+
+
+    - images/logopulsa/WeTV.png
+    - images/logopulsa/MatrixGaruda.png
+    - images/logopulsa/JawaraVision.png
+    - images/logopulsa/KawanKvision.png
+    - images/logopulsa/K-VISIONdanGOL.png
+    - images/logopulsa/Transvision.png
+    - images/logopulsa/Skynindo.png
+    - images/logopulsa/DecoderGOL.png
+    - images/logopulsa/NexParabola.png
+ 
+    - images/logopulsa/TELKOMSEL.png
+    - images/logopulsa/INDOSAT.png
+    - images/logopulsa/XL.png
+    - images/logopulsa/TRI.png
+    - images/logopulsa/SMART.png
+    - images/logopulsa/AXIS.png
+    - images/logopulsa/BYU.png
+    - images/logopulsa/SINGTEL.png
+    - images/logopulsa/STARHUB.png
+    - images/logopulsa/M1.png
+    - images/logopulsa/MAXIS.png
+    - images/logopulsa/DIGI.png
+    - images/logopulsa/CELCOM.png
+    - images/logopulsa/UMOBILE.png
+    - images/logopulsa/TUNETALK.png
+    - images/logopulsa/GLOBE.png
+    - images/logopulsa/SMART PINOY.png
+    - images/logopulsa/SUN TELECOM.png
+    - images/logopulsa/XOX.png
+    - images/logopulsa/PHILIPPINES - SMART.png
+    - images/logopulsa/CHINA TOPUP.png
+    - images/logopulsa/VIETNAM TOPUP.png
+    - images/logopulsa/THAILAND TOPUP.png
+
+    - images/logopulsa/GO PAY.png
+    - images/logopulsa/GRAB.png
+    - images/logopulsa/DANA.png
+    - images/logopulsa/LINKAJA.png
+    - images/logopulsa/MANDIRI E-TOLL.png
+    - images/logopulsa/OVO.png
+    - images/logopulsa/SHOPEE PAY.png
+    - images/logopulsa/TAPCASH BNI.png
+    - images/logopulsa/TIX ID.png
+    - images/logopulsa/BRI BRIZZI.png
+
+    - images/logopulsa/ARENA OF VALOR.png
+    - images/logopulsa/FREE FIRE.png
+    - images/logopulsa/MOBILE LEGEND.png
+    - images/logopulsa/POINT BLANK.png
+    - images/logopulsa/PUBG MOBILE.png
+    - images/logopulsa/PLN.png
+
+    - images/logopulsa/MAXIM.png
+    - images/logopulsa/MITRA SHOPEE.png
+    - images/logopulsa/I.SAKU.png
+    - images/logopulsa/SAKUKU.png
+
+    - images/logoppob/bpjs.png
+    - images/logoppob/finance.png
+    - images/logoppob/handphone.png
+    - images/logoppob/internet.png
+    - images/logoppob/pdam.png
+    - images/logoppob/pln.png
+    - images/logoppob/tv.png
+    - images/logoppob/pbb.png
+    - images/logoppob/samsat.png
+
+    - images/iconmitra/chatmitra.png
+    - images/iconmitra/editmitra.png
+    - images/iconmitra/orderFM.png
+    - images/iconmitra/orderMK.png
+    - images/iconmitra/orderMP.png
+    - images/iconmitra/produkFM.png
+    - images/iconmitra/produkMK.png
+    - images/iconmitra/produkMP.png
+    - images/iconmitra/tambahMP.png
+    - images/iconmitra/Laporan.png
+    - images/iconmitra/OrderOffline.png
+    - images/iconmitra/OrderOnline.png
+
+    - images/iconmitra/UmumHistory.png
+    - images/iconmitra/UmumOrder.png
+    - images/iconmitra/UmumPengaturan.png
+
+    - images/icontokosekitar/cs24.png
+    - images/icontokosekitar/tokooffline.png
+    - images/icontokosekitar/TokoOnline.png
+    - images/icontokosekitar/Pengantaran.png
+    - images/icontokosekitar/aturAdmin.png
+    - images/icontokosekitar/aturPengiriman.png
+    - images/icontokosekitar/aturStok.png
+    - images/icontokosekitar/aturToko.png
+    - images/icontokosekitar/cetakStruk.png
+    - images/icontokosekitar/laporanJual.png
+    - images/icontokosekitar/laporanStok.png
+    - images/icontokosekitar/listProduk.png
+    - images/icontokosekitar/penjualanOnline.png
+    - images/icontokosekitar/penjualanOffline.png
+    - images/icontokosekitar/tambahProduk.png
+    - images/icontokosekitar/tambahStok.png
+ 
+    - images/sellerbadge/regulerBadge.png
+    - images/sellerbadge/silverBadge.png
+    - images/sellerbadge/goldBadge.png
+    - images/sellerbadge/platinumBadge.png
+    - images/sellerbadge/invinityBadge.png
+    - images/sellerbadge/freeUser.jpg
+
+    - images/sellerbadge/regulerBadgeIcon.png
+    - images/sellerbadge/silverBadgeIcon.png
+    - images/sellerbadge/goldBadgeIcon.png
+    - images/sellerbadge/platinumBadgeIcon.png
+    - images/sellerbadge/invinityBadgeIcon.png
+
+    - images/TUJUAN.png
+    - images/OUTLET.png
+    - images/JEMPUT.png
+    - images/mapDRIVER.png
+    - images/mapMOBIL.png
+    - images/mapMOTOR.png
+    - images/mapPIKUP.png
+    - images/bgsertifikat.jpg
+
+
+    - sound/finish.mp3
+    - sound/chatSound.mp3
+
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
